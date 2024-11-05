@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url("/TI23B/formatif1/images/bioskop.png"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.75); 
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 20px 0px;
+}
+
+.header {
+    text-align: center;
+    padding: 30px;
+    background: #1a1a1a;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #f8d849; /* Highlighted color for title */
+}
+
+.header p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+.form-container {
+    padding: 30px;
+}
+
+.form-container h2 {
+    color: #f8d849;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Add consistent styling for all input, select elements */
+form label {
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    width: 100%; /* Ensures all elements are the same width */
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #f8d849;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e0c037;
+}
+
+form select:focus, 
+form input:focus {
+    outline: none;
+    border-color: #f8d849;
+    box-shadow: 0px 0px 5px #f8d849;
+}
